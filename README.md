@@ -87,13 +87,18 @@ Note that ORG, CITY, URL and EMAIL currently do not get recognized well due to t
 If you use the tagger, please cite:
 
 ```
-@inproceedings{eder2022lrec,
-    title = {"Beste Grüße, Maria Meyer" --- Pseudonymization of Privacy-Sensitive Information in Emails},
-    author = {Eder, Elisabeth  and
-              Wiegand, Michael and
-      	      Krieg-Holz, Ulrike  and
-      	      Hahn, Udo},
-    booktitle = {Proceedings of the 13th Language Resources and Evaluation Conference},
-    year = {2022}
+@inproceedings{eder-etal-2022-beste,
+    title = {{``}Beste Gr{\"u}{\ss}e, Maria Meyer{''} {---} Pseudonymization of Privacy-Sensitive Information in Emails},
+    author = "Eder, Elisabeth  and
+      Wiegand, Michael  and
+      Krieg-Holz, Ulrike  and
+      Hahn, Udo",
+    booktitle = "Proceedings of the Thirteenth Language Resources and Evaluation Conference",
+    month = jun,
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2022.lrec-1.79",
+    pages = "741--752",
 }
 ```
