@@ -87,7 +87,7 @@ Note that ORG, CITY, URL and EMAIL currently do not get recognized well due to t
 If you use the tagger, please cite:
 
 ```
-@inproceedings{eder-etal-2022-beste,
+@inproceedings{eder-etal-2022,
     title = {{``}Beste Gr{\"u}{\ss}e, Maria Meyer{''} {---} Pseudonymization of Privacy-Sensitive Information in Emails},
     author = "Eder, Elisabeth  and
       Wiegand, Michael  and
