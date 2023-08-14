@@ -1,6 +1,6 @@
 # Tagger for Recognizing Privacy-Sensitive Information
 
-The tagger recognizes privacy-sensitive information in German emails and similar text genres using [flair](https://github.com/flairNLP/flair) as framework. 
+The tagger recognizes privacy-sensitive information in German emails and similar text genres using [flair](https://github.com/flairNLP/flair) as a framework. 
 
 We followed flair's [code](https://github.com/flairNLP/flair/blob/master/resources/docs/TUTORIAL_7_TRAINING_A_MODEL.md#training-a-named-entity-recognition-ner-model-with-transformers) for model training and the settings described in [Schweter and Akbik (2021)](https://arxiv.org/abs/2011.06993) (without using document context) to fine-tune a transformer on 3,000 pseudonymized emails of CodE Alltag containing manually and automatically detected privacy-sensitive entities. For more information see our paper.
 
@@ -73,14 +73,15 @@ The following privacy-sensitive entities are supported:
 - STREET (street names)
 - STREETNO (street number)
 - CITY (names of cities, towns, villages or regions)
-- ZIP (zipcodes)
+- ZIP (zip codes)
 - PASS (passwords)
 - UFID (IDs, IPs, IBANs ...)
 - EMAIL (email addresses)
 - URL (URLs)
 - PHONE (phone and fax numbers)
 
-Note that ORG, CITY, URL and EMAIL currently do not get recognized well due to their replacements in the pseudonymized texts. We plan to account for this issue. In the meanwhile recognizing these entity types may be backed up with regular expressions or standard NER models.
+Note that ORG, CITY, URL and EMAIL currently do not get recognized well due to their replacements in the pseudonymized texts. Recognizing these entity types may be backed up with regular expressions or standard NER models. 
+Further, although given names do not reflect the non-binary gender identities individuals may identify with (amplified by a purely binary approach), the tagger was trained on data containing more mentions of male given names and therefore can be biased in this regard.
 
 ## Citation
 
